@@ -68,53 +68,53 @@ function avImg(name,size){size=size||40;var src=AVimg[name];if(src)return '<img 
 
 
 /* === QUIZ DATA === */
-const QS=[
-{n:1,q:"Lorsque je suis confronté(e) à un problème :",o:[{t:"Agir d'abord et réfléchir ensuite",a:"E"},{t:"Réfléchir d'abord et agir ensuite",a:"I"}]},
-{n:2,q:"Quand je lis un livre :",o:[{t:"Commencer par le début, suivre l'ordre",a:"S"},{t:"Parcourir pas forcément dans l'ordre",a:"N"}]},
-{n:3,q:"Un ami se fait cambrioler, ma réaction ?",o:[{t:"Je demande les dégâts, a-t-il appelé la police…",a:"T"},{t:"Je demande s'il va bien, a-t-il besoin de moi…",a:"F"}]},
-{n:4,q:"Quelle phrase vous correspond ?",o:[{t:"Terminer mon travail avant de me distraire",a:"J"},{t:"Je peux me distraire quand je veux",a:"P"}]},
-{n:5,q:"Un weekend idéal :",o:[{t:"Nouvelles personnes, plusieurs activités",a:"E"},{t:"Mes proches, moments au calme",a:"I"}]},
-{n:6,q:"Qu'est-ce qu'une pomme ?",o:[{t:"Fruit, rond, vert, sucré…",a:"S"},{t:"Fruit défendu, Adam & Eve, Apple, Newton…",a:"N"}]},
-{n:7,q:"Être juste :",o:[{t:"Distinguer le vrai du faux",a:"T"},{t:"Distinguer le bien du mal",a:"F"}]},
-{n:8,q:"Face à un examen :",o:[{t:"J'organise à l'avance",a:"J"},{t:"Efforts les derniers jours",a:"P"}]},
-{n:9,q:"Au sein d'un groupe :",o:[{t:"Parler et m'exprimer souvent",a:"E"},{t:"Écouter, observer, m'exprimer si nécessaire",a:"I"}]},
-{n:10,q:"Je me concentre sur :",o:[{t:"Le réel, tangible et concret",a:"S"},{t:"Les possibilités futures",a:"N"}]},
-{n:11,q:"Un ami me montre son travail :",o:[{t:"Je vois la faille, j'indique quoi améliorer",a:"T"},{t:"Je vois le positif, je valorise",a:"F"}]},
-{n:12,q:"Cadeaux de Noël :",o:[{t:"Je m'y prends à l'avance",a:"J"},{t:"Quelques jours avant",a:"P"}]},
-{n:13,q:"Fête de voisinage :",o:[{t:"Je vais vers les autres",a:"E"},{t:"Je reste avec ceux que je connais",a:"I"}]},
-{n:14,q:"Un arbre de Noël ?",o:[{t:"Arbre vert, épines, guirlandes…",a:"S"},{t:"Fête, cadeaux, ambiance…",a:"N"}]},
-{n:15,q:"Un conflit ?",o:[{t:"Étape nécessaire pour résoudre",a:"T"},{t:"Désagréable, je n'aime pas",a:"F"}]},
-{n:16,q:"Soldes, article au 1er magasin :",o:[{t:"Je l'achète tout de suite",a:"J"},{t:"Je vais voir ailleurs",a:"P"}]},
-{n:17,q:"Interlocuteur silencieux :",o:[{t:"Je demande s'il m'a écouté",a:"E"},{t:"Le silence ne me dérange pas",a:"I"}]},
-{n:18,q:"Mots qui me correspondent :",o:[{t:"Pragmatique, concret, factuel",a:"S"},{t:"Imaginatif, global, conceptuel",a:"N"}]},
-{n:19,q:"Mère SDF vole pour sa fille :",o:[{t:"Vol punissable par la loi",a:"T"},{t:"Situation l'a contrainte",a:"F"}]},
-{n:20,q:"Vous diriez de vous :",o:[{t:"Méthodique et organisé(e)",a:"J"},{t:"Spontané(e) et improvisé(e)",a:"P"}]},
-{n:21,q:"On vous reproche :",o:[{t:"Parler trop vite",a:"E"},{t:"Rester en retrait",a:"I"}]},
-{n:22,q:"Ce qui vous agace :",o:[{t:"Pas les pieds sur terre",a:"S"},{t:"Ne se projette pas",a:"N"}]},
-{n:23,q:"Vous lisez plutôt :",o:[{t:"Histoires réalistes",a:"S"},{t:"Mondes imaginaires",a:"N"}]},
-{n:24,q:"Indiquer un chemin :",o:[{t:"Repères précis",a:"S"},{t:"Repères généraux",a:"N"}]}
+var QS=[
+{n:1,q:"Lorsque je suis confronté(e) à un problème, j'ai tendance habituellement à :",o:[{t:"Agir d'abord et réfléchir ensuite",a:"E"},{t:"Réfléchir d'abord et agir ensuite",a:"I"}]},
+{n:2,q:"Quand je lis un livre, j'ai plutôt tendance à :",o:[{t:"Commencer par le début et suivre l'ordre des pages",a:"S"},{t:"Parcourir le livre pas forcément toujours dans l'ordre des pages",a:"N"}]},
+{n:3,q:"Un(e) ami(e) vient de se faire cambrioler, quelle est ma première réaction ?",o:[{t:"Je lui demande quels sont les dégâts et s'il/elle a appelé les assurances, la police…",a:"T"},{t:"Je lui demande s'il/elle va bien et s'il/elle a besoin que je vienne le/la voir pour échanger…",a:"F"}]},
+{n:4,q:"Quelle phrase vous correspond le plus ?",o:[{t:"Je dois terminer mon travail avant de me distraire",a:"J"},{t:"Je peux me distraire quand je veux",a:"P"}]},
+{n:5,q:"Pour moi, un weekend idéal, c'est :",o:[{t:"Rencontrer de nouvelles personnes, voir du monde et faire plusieurs activités",a:"E"},{t:"Passer surtout du temps avec les personnes qui me sont proches et avoir des moments où je suis au calme",a:"I"}]},
+{n:6,q:"Qu'est-ce qu'une pomme ? (choisissez les premiers mots qui vous viennent à l'esprit)",o:[{t:"Un fruit, c'est rond, vert, rouge, sucré, croquant…",a:"S"},{t:"Fruit défendu, adam & Eve, apple, New York, Newton…",a:"N"}]},
+{n:7,q:"Pour vous, être \"juste\", cela se traduit par ?",o:[{t:"Distinguer le vrai du faux",a:"T"},{t:"Distinguer le bien du mal",a:"F"}]},
+{n:8,q:"Quelle est votre manière habituelle de réagir quand vous avez un examen à préparer ?",o:[{t:"Vous organisez votre travail à l'avance et travaillez régulièrement avant la date de l'examen",a:"J"},{t:"Vous avez besoin d'être \"dos au mur\" et concentrez vos efforts les derniers jours avant l'examen",a:"P"}]},
+{n:9,q:"Au sein d'un groupe de personnes, j'ai tendance à :",o:[{t:"Parler et m'exprimer assez souvent même si mes idées ne sont pas toujours réfléchies",a:"E"},{t:"Ecouter, observer les autres et m'exprimer uniquement si j'ai quelque chose à dire",a:"I"}]},
+{n:10,q:"Je me concentre spontanément sur :",o:[{t:"Ce qui est réel, tangible et concret",a:"S"},{t:"Ce qui pourrait être et sur les possibilités futures",a:"N"}]},
+{n:11,q:"Quand un(e) ami(e) me présente un travail qu'il/elle a réalisé :",o:[{t:"Je vois immédiatement la faille et lui indique ce qu'il/elle pourrait améliorer",a:"T"},{t:"Je vois tout de suite ce qu'il/elle a bien fait et je valorise les efforts accomplis",a:"F"}]},
+{n:12,q:"Quand je fais des cadeaux de noël :",o:[{t:"J'ai tendance à m'y prendre à l'avance pour éviter la dernière minute",a:"J"},{t:"J'ai tendance à les faire quelques jours avant la date où je les donnerai",a:"P"}]},
+{n:13,q:"Lors d'une fête de voisinage, j'ai plutôt tendance à :",o:[{t:"Aller spontanément vers les autres et parler avec beaucoup de personnes",a:"E"},{t:"Rester en retrait et me concentrer sur les personnes que je connais bien",a:"I"}]},
+{n:14,q:"Qu'est ce qu'un arbre de noël ? (choisissez les premiers mots qui vous viennent à l'esprit)",o:[{t:"Un arbre, vert, avec des épines, guirlandes, décoration, odeur, étoile...",a:"S"},{t:"Naissance du christ, fête et cadeaux, ambiance chaleureuse de l'enfance, père noël…",a:"N"}]},
+{n:15,q:"Qu'est ce qu'un conflit ? (choisissez les mots clés qui vous viennent spontanément à 'esprit)",o:[{t:"Etape parfois nécessaire pour résoudre un problème…",a:"T"},{t:"Pas à l'aise, pas bien, je n'aime pas ça, c'est désagréable…",a:"F"}]},
+{n:16,q:"Au moment des soldes, si je trouve l'article que je recherche dès le premier magasin :",o:[{t:"Je l'achète tout de suite (ce qui est fait n'est plus à faire)",a:"J"},{t:"Je le repère et je vais ensuite faire d'autres magasins (on ne sait jamais, peut être je tomberai sur quelque chose de mieux)",a:"P"}]},
+{n:17,q:"Lorsque je parle à une personne et que cette dernière ne dit rien pendant un instant :",o:[{t:"Je lui demande si elle m'a bien écouté, je cherche à comprendre tout de suite ce qu'elle pense",a:"E"},{t:"Je lui laisse le temps de réflechir et de penser à ce que je lui ai dit, un moment de silence est parfois nécessaire",a:"I"}]},
+{n:18,q:"Quels sont les mots qui vous correspondent le plus ?",o:[{t:"Pragmatique, concret, factuel",a:"S"},{t:"Imaginatif, global, conceptuel",a:"N"}]},
+{n:19,q:"Une mère sans domicile vient de voler de la nourriture pour sa fille, quel est le premier jugement que vous portez ?",o:[{t:"Elle a commis un vol et c'est un acte qui peut être puni par la loi",a:"T"},{t:"Sa situation personnelle l'a contrainte à commettre cet acte",a:"F"}]},
+{n:20,q:"Vous dirirez de vous que vous êtes quelqu'un de :",o:[{t:"Méthodique et organisé(e)",a:"J"},{t:"Spontané(e) et improvisé(e)",a:"P"}]},
+{n:21,q:"Qu’est que les autres vous reprochent le plus ?",o:[{t:"Parler trop vite et ne pas toujours prendre le temps de réfléchir avant de m’exprimer",a:"S"},{t:"Ne pas m’exprimer suffisamment et rester trop en retrait",a:"N"}]},
+{n:22,q:"Qu’est ce qui vous agace le plus :",o:[{t:"Quelqu’un qui n’a pas suffisamment les pieds sur terre",a:"S"},{t:"Quelqu’un qui ne se projette pas assez vers le futur",a:"N"}]},
+{n:23,q:"Vous lisez plus facilement des livres :",o:[{t:"Qui retracent des faits passés et/ou dont l’histoire est réaliste et plausible",a:"S"},{t:"Qui vous plongent dans un monde imaginaire et/ou futuriste",a:"N"}]},
+{n:24,q:"Quand une personne vous demande comment se rendre à un endroit qu’elle ne connaît pas :",o:[{t:"Vous lui donnez des indications et repères précis",a:"S"},{t:"Vous lui donnez des repères généraux et allez à l’essentiel",a:"N"}]},
 ];
 const Q3=[
-{n:1,q:"Cette personne :",o:[{t:"Va vers les gens",a:"E"},{t:"Réservée, en retrait",a:"I"}]},
-{n:2,q:"Cette personne :",o:[{t:"Précision et fond",a:"S"},{t:"Essentiel et vision globale",a:"N"}]},
-{n:3,q:"Cette personne :",o:[{t:"Critiques avec détachement",a:"T"},{t:"Critiques à cœur",a:"F"}]},
-{n:4,q:"Cette personne :",o:[{t:"Ponctuelle",a:"J"},{t:"Souple avec les horaires",a:"P"}]},
-{n:5,q:"Cette personne :",o:[{t:"Passe vite à l'action",a:"E"},{t:"Réfléchit avant d'agir",a:"I"}]},
-{n:6,q:"Cette personne :",o:[{t:"Ne crois que ce que je vois",a:"S"},{t:"Croire en ses rêves",a:"N"}]},
-{n:7,q:"Cette personne :",o:[{t:"Exprime son désaccord",a:"T"},{t:"Privilégie les accords",a:"F"}]},
-{n:8,q:"Cette personne :",o:[{t:"Prévoit à l'avance",a:"J"},{t:"Dernière minute",a:"P"}]},
-{n:9,q:"Cette personne :",o:[{t:"Parle facilement en groupe",a:"E"},{t:"Observe d'abord",a:"I"}]},
-{n:10,q:"Cette personne :",o:[{t:"Faits concrets",a:"S"},{t:"Grandes lignes",a:"N"}]},
-{n:11,q:"Cette personne :",o:[{t:"Convaincue par la logique",a:"T"},{t:"Convaincue par l'émotion",a:"F"}]},
-{n:12,q:"Cette personne :",o:[{t:"Ponctuelle",a:"J"},{t:"Flexible avec le temps",a:"P"}]},
-{n:13,q:"Cette personne :",o:[{t:"Cercle varié",a:"E"},{t:"Cercle sélectif",a:"I"}]},
-{n:14,q:"Cette personne :",o:[{t:"Confiance en l'éprouvé",a:"S"},{t:"Se projette",a:"N"}]},
-{n:15,q:"Cette personne :",o:[{t:"Traite tous pareil",a:"T"},{t:"Personnalise",a:"F"}]},
-{n:16,q:"Cette personne :",o:[{t:"Finit avant distraction",a:"J"},{t:"Distraction régulière",a:"P"}]},
-{n:17,q:"Cette personne :",o:[{t:"Facile à connaître",a:"E"},{t:"Difficile à cerner",a:"I"}]},
-{n:18,q:"Cette personne :",o:[{t:"Bon sens pratique",a:"S"},{t:"Théories et concepts",a:"N"}]},
-{n:19,q:"Cette personne :",o:[{t:"Analyse avec distance",a:"T"},{t:"Empathie",a:"F"}]},
-{n:20,q:"Cette personne :",o:[{t:"Ne remet pas à demain",a:"J"},{t:"Options ouvertes",a:"P"}]}
+{n:1,q:"Vous diriez de cette personne qu'elle :",o:[{t:"Va facilement vers des personnes qu'elle ne connaît pas et crée spontanément le lien",a:"E"},{t:"Est plutôt réservée et reste en retrait lorsqu'elle ne connaît pas les gens",a:"I"}]},
+{n:2,q:"Vous diriez de cette personne qu'elle :",o:[{t:"Privilégie la précision, le travail bien fait et aller au fond des choses",a:"S"},{t:"Privilégie d'aller à l'essentiel et aborder les choses de manière globale",a:"N"}]},
+{n:3,q:"Vous diriez de cette personne qu'elle :",o:[{t:"Prend les critiques en faisant preuve de distance et de détachement",a:"T"},{t:"Prend les critiques en prenant les choses à cœur et de manière personnelle",a:"F"}]},
+{n:4,q:"Vous diriez de cette personne qu'elle :",o:[{t:"Est respectueuse des horaires et préfère arriver en avance",a:"J"},{t:"A une approche des horaires plutôt souple et part souvent à la dernière minute",a:"P"}]},
+{n:5,q:"Pour vous, c'est une personne qui :",o:[{t:"Préfère passer rapidement à l'action ou s'exprimer tout de suite",a:"E"},{t:"Prend le temps de la réflexion avant d'agir ou de parler",a:"I"}]},
+{n:6,q:"Pour vous, c'est une personne qui :",o:[{t:"Pourrait avoir comme devise « je ne crois que ce que je vois »",a:"S"},{t:"Pourrait avoir comme devise « il faut croire en ses rêves »",a:"N"}]},
+{n:7,q:"Pour vous, c'est une personne qui :",o:[{t:"N'hésite pas à exprimer son désaccord et à dire ce qui ne va pas",a:"T"},{t:"Privilégie les points d'accord et met l'accent sur ce qui va bien",a:"F"}]},
+{n:8,q:"Pour vous, c'est une personne qui :",o:[{t:"Prévoit les choses à l'avance pour éviter le stress de dernière minute",a:"J"},{t:"Attend la dernière minute pour se mettre en action",a:"P"}]},
+{n:9,q:"Vous pensez que cette personne :",o:[{t:"Parle et interagit facilement avec les autres en groupe",a:"E"},{t:"Écoute et observe d'abord les autres en groupe",a:"I"}]},
+{n:10,q:"Vous pensez que cette personne :",o:[{t:"S'appuie sur des faits concrets et précis dans sa communication",a:"S"},{t:"Va à l'essentiel et s'attache à donner les grandes lignes",a:"N"}]},
+{n:11,q:"Vous pensez que cette personne :",o:[{t:"Est plus facile à convaincre par une argumentation logique et factuelle",a:"T"},{t:"Est plus facile à convaincre par une argumentation personnalisée et touchante",a:"F"}]},
+{n:12,q:"Vous pensez que cette personne :",o:[{t:"Arrive à l'avance et fait preuve de ponctualité",a:"J"},{t:"Part souvent à la dernière minute et a une approche flexible du temps",a:"P"}]},
+{n:13,q:"Vous diriez que cette personne :",o:[{t:"A un cercle varié et étendu de relations",a:"E"},{t:"A un cercle choisi et sélectif de relations",a:"I"}]},
+{n:14,q:"Vous diriez que cette personne :",o:[{t:"Fait confiance à ce qui a fait ses preuves et a les pieds sur terre",a:"S"},{t:"Se projette d'abord sur les possibilités futures",a:"N"}]},
+{n:15,q:"Vous diriez que cette personne :",o:[{t:"Cherche à se montrer juste en traitant tout le monde de la même manière",a:"T"},{t:"Cherche à se montrer juste en traitant chacun de manière personnalisée",a:"F"}]},
+{n:16,q:"Vous diriez que cette personne :",o:[{t:"Préfère terminer son travail avant de se distraire",a:"J"},{t:"Aime avoir des moments de distraction réguliers pour avancer",a:"P"}]},
+{n:17,q:"Pour vous, c'est une personne qui :",o:[{t:"Est facile à connaître et spontanément ouverte aux échanges",a:"E"},{t:"Est difficile à cerner et a besoin de temps avant de s'ouvrir",a:"I"}]},
+{n:18,q:"Pour vous, c'est une personne qui :",o:[{t:"Attache de l'importance au bon sens et à l'esprit pratique",a:"S"},{t:"Attache de l'importance aux théories et aux concepts",a:"N"}]},
+{n:19,q:"Pour vous, c'est une personne qui :",o:[{t:"Sait prendre de la distance et analyser avec objectivité",a:"T"},{t:"Sait se mettre à la place des autres et fait preuve d'empathie",a:"F"}]},
+{n:20,q:"Pour vous, c'est une personne qui :",o:[{t:"A pour devise « ne remettons pas à demain ce qui peut être fait aujourd'hui »",a:"J"},{t:"A pour devise « laissons les options ouvertes, on ne sait pas de quoi demain sera fait »",a:"P"}]},
 ];
 const CT=[{id:"family",l:"Famille"},{id:"partner",l:"Conjoint(e)"},{id:"friend",l:"Ami(e)"},{id:"colleague",l:"Collègue"},{id:"pro",l:"Conn. pro"},{id:"other",l:"Connaissance"}];
 const AV={Castor:"\ud83e\uddab",Cerf:"\ud83e\udd8c",Elephant:"\ud83d\udc18",Loup:"\ud83d\udc3a",Chat:"\ud83d\udc31",Jaguar:"\ud83d\udc06",Dauphin:"\ud83d\udc2c",Renard:"\ud83e\udd8a",Panda:"\ud83d\udc3c",Girafe:"\ud83e\udd92",Licorne:"\ud83e\udd84",Chien:"\ud83d\udc15",Pieuvre:"\ud83d\udc19",Hibou:"\ud83e\udd89","Raton laveur":"\ud83e\udd9d",Lion:"\ud83e\udd81"};
@@ -146,6 +146,290 @@ var u0=getUser();if(u0){S.user=u0;S.page="home"}
 function go(upd){for(var k in upd)S[k]=upd[k];render();window.scrollTo(0,0)}
 
 /* === RENDER DISPATCH === */
+
+// Cross-analysis engine - generates detailed reports for any pair of MBTI types
+// Uses animal names as primary identifiers
+
+var CROSS_DATA = {
+  dims: [
+    {i:0, pair:['E','I'], label:'énergie', fullA:'Extraversion', fullB:'Introversion'},
+    {i:1, pair:['S','N'], label:'perception', fullA:'Sensation', fullB:'Intuition'},
+    {i:2, pair:['T','F'], label:'décision', fullA:'Pensée', fullB:'Sentiment'},
+    {i:3, pair:['J','P'], label:'mode de vie', fullA:'Jugement', fullB:'Perception'}
+  ],
+  chars: {
+    E:["Communicatif et sociable, aime partager ses idées","Curieux et ouvert aux nouvelles expériences","Tire son énergie des interactions et de l'action","S'exprime facilement et spontanément en groupe"],
+    I:["Réfléchi et observateur, préfère la profondeur","Sélectif dans ses relations, privilégie la qualité","Tire son énergie de la solitude et de la réflexion","S'exprime quand il a quelque chose de construit à dire"],
+    S:["Concret et factuel, ancré dans la réalité présente","Attentif aux détails et à la précision","Pragmatique, fait confiance à l'expérience","Préfère les méthodes éprouvées et les résultats tangibles"],
+    N:["Intuitif et imaginatif, orienté vers les possibilités","Voit les grandes lignes et les connexions entre les idées","Créatif, fait confiance à son inspiration","Préfère explorer de nouvelles approches et perspectives"],
+    T:["Logique et analytique dans ses décisions","Objectif et détaché face aux problèmes","Direct et ferme quand la situation l'exige","Valorise la compétence et l'efficacité"],
+    F:["Empathique et sensible aux besoins des autres","Guidé par ses valeurs personnelles et relationnelles","Diplomate et conciliant, recherche l'harmonie","Valorise l'authenticité et les liens humains"],
+    J:["Organisé et structuré dans sa vie quotidienne","Planifie à l'avance et respecte les engagements","Méthodique, aime que les choses soient décidées","Préfère la stabilité et la prévisibilité"],
+    P:["Flexible et spontané, s'adapte aux circonstances","Garde les options ouvertes le plus longtemps possible","Improvisateur, réactif face aux opportunités","Préfère la liberté et déteste les contraintes rigides"]
+  },
+  forces: {
+    E:["Capacité à créer du lien et à motiver les autres","Énergie communicative et enthousiasme contagieux","Dynamisme dans les échanges et prise d'initiative"],
+    I:["Profondeur de réflexion et d'analyse","Capacité d'écoute attentive et d'observation","Constance et fiabilité dans les engagements"],
+    S:["Sens du détail et exécution précise","Réalisme et pragmatisme dans l'action","Fiabilité et respect des procédures éprouvées"],
+    N:["Créativité et imagination pour innover","Vision à long terme et anticipation","Capacité à inspirer et à voir le potentiel"],
+    T:["Analyse objective et résolution logique","Esprit critique constructif et rigueur","Capacité à prendre des décisions difficiles"],
+    F:["Intelligence émotionnelle et empathie","Capacité à fédérer et créer de l'harmonie","Sensibilité aux besoins et au bien-être des autres"],
+    J:["Organisation, rigueur et respect des délais","Capacité à planifier et structurer les projets","Fiabilité et constance dans les engagements"],
+    P:["Adaptabilité et ouverture au changement","Réactivité face aux imprévus et opportunités","Spontanéité qui apporte légèreté et créativité"]
+  },
+  vigil: {
+    E:["Impulsivité, tendance à agir avant de réfléchir","Peut paraître envahissant ou ne pas assez écouter","Difficulté avec le silence et la solitude prolongée"],
+    I:["Peut paraître distant ou difficile à cerner","Tendance à garder trop pour soi","Difficulté à s'exprimer spontanément en groupe"],
+    S:["Résistance au changement et aux idées nouvelles","Tendance à critiquer ce qui sort du cadre","Difficulté avec les concepts abstraits"],
+    N:["Tendance à se disperser entre plusieurs projets","Peut négliger les détails pratiques","Risque de projets trop ambitieux ou irréalistes"],
+    T:["Peut sembler froid ou insensible","Tendance à négliger l'impact émotionnel","Difficulté avec les situations émotionnellement chargées"],
+    F:["Difficulté à prendre des décisions impopulaires","Peut prendre les critiques trop à cœur","Tendance à éviter les confrontations nécessaires"],
+    J:["Rigidité face aux imprévus et changements","Peut être perçu comme contrôlant","Difficulté à accepter la spontanéité des autres"],
+    P:["Difficulté à respecter les délais et engagements","Peut paraître désorganisé ou peu fiable","Tendance à remettre les décisions à plus tard"]
+  },
+  values: {
+    E:"ouverture, échange, action", I:"profondeur, authenticité, réflexion",
+    S:"réalisme, fiabilité, constance", N:"innovation, possibilités, développement",
+    T:"compétence, logique, équité", F:"harmonie, authenticité, relations humaines",
+    J:"stabilité, structure, engagement", P:"liberté, flexibilité, spontanéité"
+  },
+  needs: {
+    E:"interaction sociale, stimulation, reconnaissance", I:"temps personnel, espace de réflexion, échanges profonds",
+    S:"clarté, concret, preuves tangibles", N:"stimulation intellectuelle, exploration, autonomie créative",
+    T:"objectivité, logique, respect de la compétence", F:"reconnaissance émotionnelle, harmonie, valeurs partagées",
+    J:"planification, prévisibilité, cadre clair", P:"flexibilité, options ouvertes, spontanéité"
+  },
+  compTpl: {
+    EI: [
+      "{a1} ({dA}) dynamise les interactions et apporte enthousiasme et motivation",
+      "{a2} ({dB}) offre profondeur, recul et stabilité émotionnelle",
+      "Ensemble : équilibre entre mouvement et ancrage, action et réflexion"
+    ],
+    SN: [
+      "{aS} (Sensation) apporte réalisme, pragmatisme et sens du concret",
+      "{aN} (Intuition) apporte créativité, vision et ouverture aux nouvelles possibilités",
+      "Ensemble : {aS} aide à concrétiser les idées de {aN}, qui stimule {aS} à explorer de nouvelles perspectives"
+    ],
+    TF: [
+      "{aT} (Pensée) apporte objectivité, logique et analyse des conséquences",
+      "{aF} (Sentiment) apporte empathie, sensibilité et attention aux personnes",
+      "Ensemble : une prise de décision plus complète intégrant logique et valeurs humaines"
+    ],
+    JP: [
+      "{aJ} (Jugement) apporte structure, organisation et planification",
+      "{aP} (Perception) apporte souplesse, adaptabilité et spontanéité",
+      "Ensemble : {aJ} aide {aP} à canaliser son énergie, {aP} aide {aJ} à sortir de la rigidité"
+    ]
+  },
+  frictTpl: {
+    EI: {
+      domain: "Communication et rythme",
+      risk: "{aE} (Extraversion) expressif et spontané vs {aI} (Introversion) réservé et réfléchi",
+      action: "Respecter le rythme de chacun, écouter avant de réagir, valoriser les contributions de chacun"
+    },
+    SN: {
+      domain: "Vision et approche",
+      risk: "{aS} (Sensation) concret et factuel vs {aN} (Intuition) abstrait et conceptuel",
+      action: "{aN} doit ancrer ses idées dans le concret pour {aS} ; {aS} doit s'ouvrir aux nouvelles perspectives de {aN}"
+    },
+    TF: {
+      domain: "Prise de décision",
+      risk: "{aT} (Pensée) logique et détaché vs {aF} (Sentiment) émotionnel et empathique",
+      action: "{aT} doit prendre en compte les sentiments ; {aF} doit accepter l'analyse logique sans la prendre personnellement"
+    },
+    JP: {
+      domain: "Planification et organisation",
+      risk: "{aJ} (Jugement) structuré et planificateur vs {aP} (Perception) flexible et spontané",
+      action: "Définir ensemble les étapes importantes et négocier les moments d'improvisation"
+    }
+  }
+};
+
+function genCross(t1, t2) {
+  var p1 = PD[t1], p2 = PD[t2];
+  var a1 = p1.avatar, a2 = p2.avatar;
+  var artA1 = artName(a1), artA2 = artName(a2);
+  var shared = [], diff = [];
+  
+  for (var d = 0; d < 4; d++) {
+    if (t1[d] === t2[d]) {
+      shared.push({letter: t1[d], dim: CROSS_DATA.dims[d]});
+    } else {
+      diff.push({l1: t1[d], l2: t2[d], dim: CROSS_DATA.dims[d]});
+    }
+  }
+  
+  var sc = Math.min(Math.round(shared.length/4*55 + diff.length/3*45 + 15), 95);
+  
+  // Characteristics
+  var chars1 = [], chars2 = [];
+  for (var i = 0; i < 4; i++) { chars1.push(CROSS_DATA.chars[t1[i]][i]); chars2.push(CROSS_DATA.chars[t2[i]][i]); }
+  
+  // Forces & vigilance
+  var forces1 = [], forces2 = [], vig1 = [], vig2 = [];
+  for (var i = 0; i < 4; i++) {
+    forces1.push(CROSS_DATA.forces[t1[i]][0]); forces2.push(CROSS_DATA.forces[t2[i]][0]);
+    vig1.push(CROSS_DATA.vigil[t1[i]][0]); vig2.push(CROSS_DATA.vigil[t2[i]][0]);
+  }
+  
+  // Values & needs
+  var val1 = [], val2 = [], need1 = [], need2 = [];
+  for (var i = 0; i < 4; i++) {
+    val1.push(CROSS_DATA.values[t1[i]]); val2.push(CROSS_DATA.values[t2[i]]);
+    need1.push(CROSS_DATA.needs[t1[i]]); need2.push(CROSS_DATA.needs[t2[i]]);
+  }
+  
+  // Alignments
+  var align = [];
+  for (var i = 0; i < shared.length; i++) {
+    var s = shared[i];
+    var full = s.letter === s.dim.pair[0] ? s.dim.fullA : s.dim.fullB;
+    align.push({
+      domain: s.dim.label.charAt(0).toUpperCase() + s.dim.label.slice(1),
+      a: "Même préférence en " + s.dim.label + " (" + full + ")",
+      b: a1 + " et " + a2 + " partagent une approche similaire, ce qui facilite la compréhension mutuelle"
+    });
+  }
+  
+  // Complementarities
+  var compl = [];
+  for (var i = 0; i < diff.length; i++) {
+    var df = diff[i];
+    var pairKey = df.dim.pair[0] + df.dim.pair[1];
+    var tpl = CROSS_DATA.compTpl[pairKey];
+    if (tpl) {
+      var lines = [];
+      for (var j = 0; j < tpl.length; j++) {
+        var line = tpl[j];
+        // Replace placeholders
+        line = line.replace(/\{a1\}/g, a1).replace(/\{a2\}/g, a2);
+        line = line.replace(/\{dA\}/g, df.dim.fullA).replace(/\{dB\}/g, df.dim.fullB);
+        // For SN/TF/JP specific replacements
+        if (pairKey === 'SN') {
+          line = line.replace(/\{aS\}/g, df.l1==='S'?a1:a2).replace(/\{aN\}/g, df.l1==='N'?a1:a2);
+        } else if (pairKey === 'TF') {
+          line = line.replace(/\{aT\}/g, df.l1==='T'?a1:a2).replace(/\{aF\}/g, df.l1==='F'?a1:a2);
+        } else if (pairKey === 'JP') {
+          line = line.replace(/\{aJ\}/g, df.l1==='J'?a1:a2).replace(/\{aP\}/g, df.l1==='P'?a1:a2);
+        } else if (pairKey === 'EI') {
+          line = line.replace(/\{aE\}/g, df.l1==='E'?a1:a2).replace(/\{aI\}/g, df.l1==='I'?a1:a2);
+        }
+        lines.push(line);
+      }
+      compl.push({title: df.dim.fullA + " vs " + df.dim.fullB, lines: lines});
+    }
+  }
+  
+  // Frictions
+  var frict = [];
+  for (var i = 0; i < diff.length; i++) {
+    var df = diff[i];
+    var pairKey = df.dim.pair[0] + df.dim.pair[1];
+    var tpl = CROSS_DATA.frictTpl[pairKey];
+    if (tpl) {
+      var risk = tpl.risk, action = tpl.action;
+      // Replace all placeholders
+      var replacements = {'{a1}':a1,'{a2}':a2};
+      if (pairKey==='EI') { replacements['{aE}']=df.l1==='E'?a1:a2; replacements['{aI}']=df.l1==='I'?a1:a2; }
+      if (pairKey==='SN') { replacements['{aS}']=df.l1==='S'?a1:a2; replacements['{aN}']=df.l1==='N'?a1:a2; }
+      if (pairKey==='TF') { replacements['{aT}']=df.l1==='T'?a1:a2; replacements['{aF}']=df.l1==='F'?a1:a2; }
+      if (pairKey==='JP') { replacements['{aJ}']=df.l1==='J'?a1:a2; replacements['{aP}']=df.l1==='P'?a1:a2; }
+      for (var k in replacements) { risk = risk.split(k).join(replacements[k]); action = action.split(k).join(replacements[k]); }
+      frict.push({domain: tpl.domain, risk: risk, action: action});
+    }
+  }
+  
+  // Guide
+  var guide = [
+    {title:"Routines et priorités", text:"Quelles sont les priorités de chacun cette semaine ? Quels projets nécessitent planification stricte et quels projets peuvent être flexibles ?"},
+    {title:"Échanges émotionnels", text: a1 + " : partager ce qui " + (t1[2]==='F'?"enthousiasme ou préoccupe":"est clair et structurant") + ". " + a2 + " : partager ce qui " + (t2[2]==='F'?"enthousiasme ou préoccupe":"rassure et sécurise") + "."},
+    {title:"Planification commune", text:"Définir ensemble 1-2 routines fixes (ex : repas, moments de partage). Prévoir 1-2 moments spontanés pour stimuler créativité et légèreté."},
+    {title:"Débrief et feedback", text:"Qu'est-ce qui a bien fonctionné ? Qu'est-ce qui pourrait être amélioré ? Quels ajustements pour mieux respecter le rythme et les besoins de chacun ?"}
+  ];
+  
+  // Suggestions
+  var sugg1 = [], sugg2 = [];
+  for (var i = 0; i < diff.length; i++) {
+    var df = diff[i];
+    var pairKey = df.dim.pair[0] + df.dim.pair[1];
+    if (pairKey==='EI') {
+      if (df.l1==='E') { sugg1.push("Noter ses idées pour ne pas submerger " + artName(a2)); sugg2.push("Communiquer clairement ses besoins de calme " + artAu(a1)); }
+      else { sugg1.push("Faire l'effort de partager davantage ses réflexions avec " + artName(a2)); sugg2.push("Laisser du temps de réflexion " + artAu(a1) + " avant d'attendre une réponse"); }
+    }
+    if (pairKey==='SN') {
+      if (df.l1==='S') { sugg1.push("Apprécier la créativité " + artDe(a2) + " même si elle semble abstraite"); sugg2.push("Ancrer ses idées dans des exemples concrets pour " + artName(a1)); }
+      else { sugg1.push("Préciser ses idées avec des exemples concrets pour " + artName(a2)); sugg2.push("S'ouvrir aux nouvelles perspectives " + artDe(a1)); }
+    }
+    if (pairKey==='TF') {
+      if (df.l1==='T') { sugg1.push("Prendre en compte les sentiments " + artDe(a2) + " dans les échanges"); sugg2.push("Accepter l'analyse logique " + artDe(a1) + " sans la prendre personnellement"); }
+      else { sugg1.push("Accepter l'approche analytique " + artDe(a2) + " comme complémentaire"); sugg2.push("Reconnaître et valoriser la sensibilité " + artDe(a1)); }
+    }
+    if (pairKey==='JP') {
+      if (df.l1==='J') { sugg1.push("Accepter ponctuellement la spontanéité " + artDe(a2)); sugg2.push("Respecter le besoin de planification " + artDe(a1)); }
+      else { sugg1.push("Préciser ses priorités et échéances pour rassurer " + artName(a2)); sugg2.push("Laisser de l'espace pour l'improvisation " + artDe(a1)); }
+    }
+  }
+  sugg1.push("Apprécier et respecter la constance et la méthode " + artDe(a2));
+  sugg2.push("Écouter les idées " + artDe(a1) + " avant de juger ou critiquer");
+  
+  return {
+    sc:sc, sh:shared.length, co:diff.length,
+    chars1:chars1, chars2:chars2,
+    forces1:forces1, forces2:forces2,
+    vig1:vig1, vig2:vig2,
+    val1:val1.join(", "), val2:val2.join(", "),
+    need1:need1.join(", "), need2:need2.join(", "),
+    align:align, compl:compl, frict:frict,
+    guide:guide, sugg1:sugg1, sugg2:sugg2
+  };
+}
+
+
+
+function pg360Link(){
+  var token=S.tmp.lastToken||"";
+  var name=S.tmp.lastName||"";
+  var sender=S.user.firstName+" "+S.user.lastName;
+  var msg="Bonjour ! "+sender+" t\u2019invite \u00e0 compl\u00e9ter un questionnaire 360\u00b0 Me&We pour l\u2019aider \u00e0 mieux se conna\u00eetre.\n\nTon code : "+token+"\n\nMerci !";
+  return '<div class="page"><div class="hdr"><div style="display:flex;align-items:center"><button class="hdr-b" onclick="go({page:\'f360\'})">\u2190</button><span style="font-size:.95rem;font-weight:600">Invitation cr\u00e9\u00e9e</span></div></div>'
+  +'<div class="mx" style="padding-top:1.5rem;padding-bottom:2rem">'
+  +'<div class="card" style="text-align:center;background:linear-gradient(135deg,#E3F2FD,#E8F5E9)"><div style="font-size:2.5rem;margin-bottom:.5rem">\u2705</div><div style="font-size:1.1rem;font-weight:700;margin-bottom:.3rem">Invitation pour '+esc(name)+'</div><p style="font-size:.85rem;color:var(--mu);margin:0">Token unique g\u00e9n\u00e9r\u00e9</p></div>'
+  +'<div class="card"><h4 style="font-size:.9rem;font-weight:600;margin:0 0 .5rem">Code d\u2019invitation</h4><div style="background:#f0f4f8;border-radius:10px;padding:14px;text-align:center;font-family:monospace;font-size:1.2rem;font-weight:700;color:var(--c1);letter-spacing:2px;margin-bottom:.6rem" id="tokenDisplay">'+token+'</div><button class="btn-p" onclick="copyToken()">Copier le code</button></div>'
+  +'<div class="card"><h4 style="font-size:.9rem;font-weight:600;margin:0 0 .5rem">Message pr\u00eat \u00e0 envoyer</h4><div style="background:#f0f4f8;border-radius:10px;padding:12px;font-size:.84rem;color:#444;line-height:1.6;white-space:pre-wrap" id="msgDisplay">'+esc(msg)+'</div><button class="btn-o" style="width:100%;margin-top:.5rem" onclick="copyMsg()">Copier le message complet</button></div>'
+  +'<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:.5rem">'
+  +'<button onclick="shareWhatsApp()" style="padding:12px;border-radius:12px;border:none;background:#25D366;color:#fff;font-weight:600;font-size:.88rem;cursor:pointer">WhatsApp</button>'
+  +'<button onclick="shareEmail()" style="padding:12px;border-radius:12px;border:none;background:var(--c1);color:#fff;font-weight:600;font-size:.88rem;cursor:pointer">Email</button>'
+  +'</div>'
+  +'<p style="font-size:.78rem;color:var(--mu);text-align:center;margin-top:1rem">La personne r\u00e9pondra au questionnaire 360\u00b0 et ses r\u00e9sultats appara\u00eetront automatiquement dans votre espace.</p>'
+  +'<button class="btn-o" style="width:100%;margin-top:.5rem" onclick="go({page:\'f360\'})">Retour au 360\u00b0</button>'
+  +'</div></div>';
+}
+function copyToken(){
+  var t=document.getElementById("tokenDisplay");
+  if(t){navigator.clipboard.writeText(t.innerText).then(function(){alert("Code copi\u00e9 !")}).catch(function(){prompt("Copiez ce code :",t.innerText)})}
+}
+function copyMsg(){
+  var t=document.getElementById("msgDisplay");
+  if(t){navigator.clipboard.writeText(t.innerText).then(function(){alert("Message copi\u00e9 !")}).catch(function(){prompt("Copiez ce message :",t.innerText)})}
+}
+function shareWhatsApp(){
+  var msg=document.getElementById("msgDisplay");
+  if(msg){window.open("https://wa.me/?text="+encodeURIComponent(msg.innerText),"_blank")}
+}
+function shareEmail(){
+  var msg=document.getElementById("msgDisplay");
+  var sender=S.user.firstName+" "+S.user.lastName;
+  if(msg){window.open("mailto:?subject="+encodeURIComponent("Invitation 360 Me&We de "+sender)+"&body="+encodeURIComponent(msg.innerText),"_blank")}
+}
+
+
+var ART_GENDER={"Castor":"m","Cerf":"m","Elephant":"e","Loup":"m","Chat":"m","Jaguar":"m","Dauphin":"m","Renard":"m","Panda":"m","Girafe":"f","Licorne":"f","Chien":"m","Pieuvre":"f","Hibou":"m","Raton laveur":"m","Lion":"m"};
+var ART_NAMES={"Castor":"Le Castor","Cerf":"Le Cerf","Elephant":"L\u2019\u00c9l\u00e9phant","Loup":"Le Loup","Chat":"Le Chat","Jaguar":"Le Jaguar","Dauphin":"Le Dauphin","Renard":"Le Renard","Panda":"Le Panda","Girafe":"La Girafe","Licorne":"La Licorne","Chien":"Le Chien","Pieuvre":"La Pieuvre","Hibou":"Le Hibou","Raton laveur":"Le Raton laveur","Lion":"Le Lion"};
+function artName(n){return ART_NAMES[n]||n}
+function artDe(n){var g=ART_GENDER[n];if(g==="e")return "de l\u2019\u00c9l\u00e9phant";if(g==="f")return "de la "+n;return "du "+n}
+function artChez(n){var g=ART_GENDER[n];if(g==="e")return "chez l\u2019\u00c9l\u00e9phant";if(g==="f")return "chez la "+n;return "chez le "+n}
+function artAu(n){var g=ART_GENDER[n];if(g==="e")return "\u00e0 l\u2019\u00c9l\u00e9phant";if(g==="f")return "\u00e0 la "+n;return "au "+n}
+
 function render(){
   var a=document.getElementById("app");
   if(!S.user && S.page!=="auth") S.page="auth";
@@ -163,6 +447,7 @@ function render(){
     else if(S.page==="360oq") h=pgQuiz(Q3,"360 — "+S.tmp.name,"En pensant à "+S.tmp.name,"360o");
     else if(S.page==="360or") h=pgProfile(S.tmp.rt,S.tmp.rp,"Hypothèse pour "+S.tmp.name,false,true);
     else if(S.page==="360inv") h=pg360Inv();
+    else if(S.page==="360link") h=pg360Link();
     else if(S.page==="360g") h=pg360G();
     else if(S.page==="360v") h=pg360V();
     else if(S.page==="cross") h=pgCross();
@@ -375,10 +660,10 @@ function pgDetail(mbti){
   +totem+fam+charac+portrait
   +'<div style="display:grid;grid-template-columns:1fr 1fr;gap:7px">'+celeb+fiction+'</div>'
   +'<div style="display:grid;grid-template-columns:1fr 1fr;gap:7px">'+mplus+mmoins+'</div>'
-  +sct("Ce que les autres aiment chez "+esc(p.avatar),p.aime,"#2E7D32")
+  +sct("Ce que les autres aiment "+artChez(p.avatar),p.aime,"#2E7D32")
   +sct("Ce que les autres aiment moins",p.aimeMoins,"#E65100")
-  +sct("Ce que "+esc(p.avatar)+" appr\u00e9cie chez les autres",p.apprecie,"#1565C0")
-  +sct("Ce qui irrite "+esc(p.avatar),p.irrite,"#C62828")
+  +sct("Ce que "+artName(p.avatar)+" appr\u00e9cie chez les autres",p.apprecie,"#1565C0")
+  +sct("Ce qui irrite "+artName(p.avatar),p.irrite,"#C62828")
   +'</div></div>';
 }
 
@@ -420,24 +705,25 @@ function save360C(){S.user.contacts=S.user.contacts||[];S.user.contacts.push({na
 /* === 360 INVITE === */
 function pg360Inv(){
   var cH="";for(var i=0;i<CT.length;i++){var ct=CT[i];cH+='<button class="cb" style="background:'+(S.tmp.circle===ct.id?'var(--c1)':'#eef2f7')+';color:'+(S.tmp.circle===ct.id?'#fff':'#666')+'" onclick="S.tmp.circle=\''+ct.id+'\';render()">'+ct.l+'</button>'}
-  return '<div class="page"><div class="hdr"><div style="display:flex;align-items:center"><button class="hdr-b" onclick="go({page:\'f360\'})">\u2190</button><span style="font-size:.95rem;font-weight:600">Inviter</span></div></div>'
+  return '<div class="page"><div class="hdr"><div style="display:flex;align-items:center"><button class="hdr-b" onclick="go({page:\'f360\'})">\u2190</button><span style="font-size:.95rem;font-weight:600">Inviter quelqu\'un</span></div></div>'
   +'<div class="mx" style="padding-top:1.3rem;padding-bottom:2rem">'
-  +'<div class="card" style="background:linear-gradient(135deg,#E3F2FD,#E8F5E9);box-shadow:none"><p style="font-size:.84rem;color:#444;line-height:1.55;margin:0">Un token unique sera g\u00e9n\u00e9r\u00e9 pour chaque invitation.</p></div>'
-  +'<label style="font-size:.83rem;font-weight:600;color:#444;display:block;margin:.7rem 0 4px">Pr\u00e9nom / Nom</label><input type="text" id="iN" placeholder="Paul Martin">'
-  +'<label style="font-size:.83rem;font-weight:600;color:#444;display:block;margin:0 0 4px">Email</label><input type="email" id="iE" placeholder="paul@email.com">'
+  +'<div class="card" style="background:linear-gradient(135deg,#E3F2FD,#E8F5E9);box-shadow:none"><p style="font-size:.84rem;color:#444;line-height:1.55;margin:0">Un lien unique sera g\u00e9n\u00e9r\u00e9 pour cette personne. Vous pourrez le copier et l\u2019envoyer par <strong>WhatsApp, email, SMS</strong> ou tout autre moyen.</p></div>'
+  +'<label style="font-size:.83rem;font-weight:600;color:#444;display:block;margin:.7rem 0 4px">Pr\u00e9nom / Nom de la personne</label><input type="text" id="iN" placeholder="Ex : Paul Martin">'
   +'<label style="font-size:.83rem;font-weight:600;color:#444;display:block;margin:0 0 4px">Relation</label><div style="margin-bottom:1rem">'+cH+'</div>'
-  +'<button class="btn-p" onclick="sendInv()">Envoyer l\'invitation</button>'
-  +'<p style="font-size:.72rem;color:#bbb;margin-top:.8rem;text-align:center">Prototype : r\u00e9ponses simul\u00e9es apr\u00e8s 3s</p></div></div>';
+  +'<button class="btn-p" onclick="genInvLink()">G\u00e9n\u00e9rer le lien d\u2019invitation</button>'
+  +'</div></div>';
 }
-function sendInv(){
-  var n=document.getElementById("iN").value.trim(),e=document.getElementById("iE").value.trim();
-  if(!n||!e){alert("Remplir tous les champs");return}
+function sendInv(){}
+function genInvLink(){
+  var n=document.getElementById("iN").value.trim();
+  if(!n){alert("Saisir un nom");return}
   var cl="Contact";for(var i=0;i<CT.length;i++){if(CT[i].id===S.tmp.circle)cl=CT[i].l}
   var token="MW-"+uid().toUpperCase();
-  var entry={name:n,email:e,circle:cl,r:null,token:token,from:S.user.firstName+" "+S.user.lastName,date:new Date().toISOString()};
+  var entry={name:n,email:"",circle:cl,r:null,token:token,from:S.user.firstName+" "+S.user.lastName,date:new Date().toISOString()};
   S.user.c360=S.user.c360||[];S.user.c360.push(entry);
-  setTimeout(function(){entry.r=Q3.map(function(){return Math.random()>.5?0:1});saveUser(S.user);render()},3000);
-  saveUser(S.user);alert("\u2705 Invitation envoy\u00e9e \u00e0 "+n+"\nToken : "+token);go({page:"f360"});
+  saveUser(S.user);
+  S.tmp.lastToken=token;S.tmp.lastName=n;
+  go({page:"360link"});
 }
 
 /* === 360 GLOBAL === */
@@ -475,7 +761,8 @@ function pgCross(){
   +'<div class="mx" style="padding-top:1rem;padding-bottom:2rem">'
   +'<div style="display:flex;align-items:center;gap:10px;padding:10px 14px;background:'+mtc.lt+';border-radius:13px;border:1px solid '+mtc.ac+'22;margin-bottom:.8rem"><span style="">'+avImg(mp.avatar,55)+'</span><div><div style="font-weight:700;font-size:.95rem;color:'+mtc.tx+'">'+esc(mp.avatar)+'</div><div style="font-size:.78rem;color:var(--mu)">'+u.myType+' \u2014 '+esc(mp.kersey)+'</div></div></div>'
   +'<h3 style="font-size:.9rem;font-weight:600;margin:.6rem 0 .4rem">Mon entourage</h3>'+cH
-  +'<div class="card" style="border:2px dashed var(--bd);margin-top:.6rem"><h4 style="font-size:.86rem;font-weight:600;margin:0 0 .6rem">+ Ajouter un contact</h4>'
+  +'<div class="card" style="border:2px solid var(--c1);margin-top:.6rem"><h4 style="font-size:.9rem;font-weight:700;color:var(--c1);margin:0 0 .5rem">\ud83d\udd0d Comparer directement avec un profil</h4><p style="font-size:.8rem;color:var(--mu);margin:0 0 .5rem">S\u00e9lectionnez un profil puis cliquez Comparer</p><div class="tg">'+tBtns+'</div>'+(S.tmp.at?'<button class="btn-p" style="margin-top:.5rem" onclick="go({page:\'crossR\',tmp:{cc:{name:PD[S.tmp.at].avatar,type:S.tmp.at,circle:\'Comparaison directe\'}}})">\ud83d\udcca Rapport crois\u00e9 : '+esc(mp.avatar)+' \u00d7 '+(S.tmp.at?esc(PD[S.tmp.at].avatar):"")+'</button>':'<p style="font-size:.78rem;color:#bbb;text-align:center;margin:.5rem 0 0">\u2191 S\u00e9lectionnez un profil ci-dessus</p>')+'</div>'
++'<div class="card" style="border:2px dashed var(--bd);margin-top:.6rem"><h4 style="font-size:.86rem;font-weight:600;margin:0 0 .6rem">+ Ajouter un contact</h4>'
   +'<input type="text" id="aN" placeholder="Pr\u00e9nom / Nom">'
   +'<label style="font-size:.76rem;font-weight:600;color:#444;display:block;margin:0 0 3px">Profil</label><div class="tg">'+tBtns+'</div>'
   +'<label style="font-size:.76rem;font-weight:600;color:#444;display:block;margin:0 0 3px">Relation</label><div style="margin-bottom:.7rem">'+ciH+'</div>'
@@ -485,22 +772,95 @@ function addMC(){var el=document.getElementById("aN");var n=el?el.value.trim():"
 
 /* === CROSS RESULT === */
 function pgCrossR(){
-  var c=S.tmp.cc;var cp=compat(S.user.myType,c.type);var mp=PD[S.user.myType];var op=PD[c.type];var mtc=TCC[mp.temperament];var otc=TCC[op.temperament];
+  var c=S.tmp.cc;var cr=genCross(S.user.myType,c.type);
+  var p1=PD[S.user.myType];var p2=PD[c.type];var a1=p1.avatar;var a2=p2.avatar;
+  var tc1=TCC[p1.temperament];var tc2=TCC[p2.temperament];
+  
+  // Section 1: Overview
+  var ov1='';for(var i=0;i<cr.chars1.length;i++){ov1+='<div style="font-size:.8rem;color:#555;padding:3px 0;border-left:2px solid '+tc1.ac+';padding-left:8px;margin-bottom:3px">'+esc(cr.chars1[i])+'</div>'}
+  var ov2='';for(var i=0;i<cr.chars2.length;i++){ov2+='<div style="font-size:.8rem;color:#555;padding:3px 0;border-left:2px solid '+tc2.ac+';padding-left:8px;margin-bottom:3px">'+esc(cr.chars2[i])+'</div>'}
+  
+  // Forces & vigilance
+  var f1='';for(var i=0;i<cr.forces1.length;i++){f1+='<div style="font-size:.78rem;color:#2E7D32;padding:2px 0">\u2705 '+esc(cr.forces1[i])+'</div>'}
+  var f2='';for(var i=0;i<cr.forces2.length;i++){f2+='<div style="font-size:.78rem;color:#2E7D32;padding:2px 0">\u2705 '+esc(cr.forces2[i])+'</div>'}
+  var v1='';for(var i=0;i<cr.vig1.length;i++){v1+='<div style="font-size:.78rem;color:#E65100;padding:2px 0">\u26a0 '+esc(cr.vig1[i])+'</div>'}
+  var v2='';for(var i=0;i<cr.vig2.length;i++){v2+='<div style="font-size:.78rem;color:#E65100;padding:2px 0">\u26a0 '+esc(cr.vig2[i])+'</div>'}
+  
+  // Alignments
+  var alH='';
+  for(var i=0;i<cr.align.length;i++){var al=cr.align[i];
+    alH+='<div style="margin-bottom:8px"><div style="font-weight:600;font-size:.82rem;color:#1565C0">'+esc(al.domain)+'</div><div style="font-size:.78rem;color:#555;padding-left:10px;border-left:2px solid #90CAF9">'+esc(al.a)+'<br>'+esc(al.b)+'</div></div>'}
+  
+  // Complementarities
+  var coH='';
+  for(var i=0;i<cr.compl.length;i++){var co=cr.compl[i];
+    coH+='<div style="margin-bottom:10px"><div style="font-weight:600;font-size:.85rem;color:#00897B;margin-bottom:4px">'+esc(co.title)+'</div>';
+    for(var j=0;j<co.lines.length;j++){coH+='<div style="font-size:.8rem;color:#555;padding:2px 0 2px 10px;border-left:2px solid '+((j===co.lines.length-1)?'#4DB6AC':'#B2DFDB')+'">'+esc(co.lines[j])+'</div>'}
+    coH+='</div>'}
+  
+  // Frictions
+  var frH='';
+  for(var i=0;i<cr.frict.length;i++){var fr=cr.frict[i];
+    frH+='<div style="margin-bottom:10px"><div style="font-weight:600;font-size:.85rem;color:#E65100;margin-bottom:3px">'+esc(fr.domain)+'</div>'
+    +'<div style="font-size:.8rem;color:#555;padding:3px 0 3px 10px;border-left:2px solid #FFCC80"><strong>Risque :</strong> '+esc(fr.risk)+'</div>'
+    +'<div style="font-size:.8rem;color:#388E3C;padding:3px 0 3px 10px;border-left:2px solid #A5D6A7"><strong>Action :</strong> '+esc(fr.action)+'</div></div>'}
+  
+  // Guide
+  var guH='';
+  for(var i=0;i<cr.guide.length;i++){var g=cr.guide[i];
+    guH+='<div style="margin-bottom:8px"><div style="font-weight:600;font-size:.82rem">'+(i+1)+'. '+esc(g.title)+'</div><div style="font-size:.8rem;color:#555;line-height:1.55">'+esc(g.text)+'</div></div>'}
+  
+  // Suggestions
+  var sg1='';for(var i=0;i<cr.sugg1.length;i++){sg1+='<div style="font-size:.8rem;color:#555;padding:3px 0 3px 10px;border-left:2px solid '+tc1.ac+'">'+esc(cr.sugg1[i])+'</div>'}
+  var sg2='';for(var i=0;i<cr.sugg2.length;i++){sg2+='<div style="font-size:.8rem;color:#555;padding:3px 0 3px 10px;border-left:2px solid '+tc2.ac+'">'+esc(cr.sugg2[i])+'</div>'}
+  
+  // Dimension bars
   var axes=[["E/I",S.user.myType[0]==="E"?80:20,c.type[0]==="E"?80:20],["S/N",S.user.myType[1]==="S"?80:20,c.type[1]==="S"?80:20],["T/F",S.user.myType[2]==="T"?80:20,c.type[2]==="T"?80:20],["J/P",S.user.myType[3]==="J"?80:20,c.type[3]==="J"?80:20]];
-  var bars="";for(var i=0;i<axes.length;i++){bars+='<div style="margin-bottom:7px"><div style="font-size:.72rem;color:var(--mu);margin-bottom:2px">'+axes[i][0]+'</div><div style="display:flex;gap:4px"><div style="height:10px;width:'+axes[i][1]+'%;max-width:45%;background:'+mtc.ac+';border-radius:5px;opacity:.7"></div><div style="height:10px;width:'+axes[i][2]+'%;max-width:45%;background:'+otc.ac+';border-radius:5px;opacity:.7"></div></div></div>'}
-  var alH="";for(var i=0;i<cp.al.length;i++){alH+='<div class="sc" style="border-color:#A5D6A7">'+esc(cp.al[i])+'</div>'}
-  var coH="";for(var i=0;i<cp.co.length;i++){coH+='<div class="sc" style="border-color:#90CAF9">'+esc(cp.co[i])+'</div>'}
-  var frH="";for(var i=0;i<cp.fr.length;i++){frH+='<div class="sc" style="border-color:#FFCC80">'+esc(cp.fr[i])+'</div>'}
-  return '<div class="page"><div style="background:var(--grad);color:#fff;padding:1.8rem 1.5rem 2.8rem;text-align:center">'
-  +'<button onclick="go({page:\'cross\',tmp:{}})" style="background:rgba(255,255,255,.2);border:none;color:#fff;border-radius:20px;padding:5px 13px;cursor:pointer;font-size:.78rem;margin-bottom:.8rem">\u2190 Retour</button>'
-  +'<div style="display:flex;justify-content:center;align-items:center;gap:16px"><div><div style="">'+avImg(mp.avatar,55)+'</div><div style="font-weight:700;font-size:.9rem">'+esc(mp.avatar)+'</div><div style="font-size:.7rem;opacity:.7">Moi</div></div><div style="font-size:1.1rem;opacity:.5">\u00d7</div><div><div style="">'+avImg(op.avatar,55)+'</div><div style="font-weight:700;font-size:.9rem">'+esc(op.avatar)+'</div><div style="font-size:.7rem;opacity:.7">'+esc(c.name)+'</div></div></div></div>'
-  +'<div class="mx" style="margin-top:-1.3rem;padding-bottom:2rem">'
-  +'<div class="card" style="text-align:center"><div style="font-size:1.9rem;font-weight:700;color:var(--c1)">'+cp.sc+'%</div><p style="font-size:.78rem;color:var(--mu);margin:3px 0 0">'+cp.sh+'/4 dimensions communes</p></div>'
-  +'<div class="card"><h3 style="font-size:.9rem;font-weight:600;margin:0 0 .4rem">Comparaison</h3>'+bars+'</div>'
-  +(cp.al.length?'<div class="card"><h4 style="font-size:.86rem;font-weight:600;color:#2E7D32;margin:0 0 .5rem">Alignement</h4>'+alH+'</div>':"")
-  +(cp.co.length?'<div class="card"><h4 style="font-size:.86rem;font-weight:600;color:#1565C0;margin:0 0 .5rem">Compl\u00e9mentarit\u00e9s</h4>'+coH+'</div>':"")
-  +(cp.fr.length?'<div class="card"><h4 style="font-size:.86rem;font-weight:600;color:#E65100;margin:0 0 .5rem">Frictions</h4>'+frH+'</div>':"")
-  +'<div class="card" style="background:linear-gradient(135deg,#E3F2FD,#E8F5E9);box-shadow:none"><h4 style="font-size:.9rem;font-weight:600;margin:0 0 .5rem">Guide de discussion</h4><div style="font-size:.82rem;color:#444;line-height:1.65"><p style="margin:0 0 6px"><strong>1. Priorit\u00e9s</strong> \u2014 Quelles sont les priorit\u00e9s de chacun ?</p><p style="margin:0 0 6px"><strong>2. \u00c9motions</strong> \u2014 Partagez enthousiasme et pr\u00e9occupations.</p><p style="margin:0 0 6px"><strong>3. Planning</strong> \u2014 1-2 routines + 1-2 moments spontan\u00e9s.</p><p style="margin:0"><strong>4. D\u00e9brief</strong> \u2014 Qu\'a fonctionn\u00e9 ? Ajustements ?</p></div></div></div></div>';
+  var bars='';for(var i=0;i<axes.length;i++){bars+='<div style="margin-bottom:6px"><div style="font-size:.72rem;color:var(--mu);margin-bottom:2px">'+axes[i][0]+'</div><div style="display:flex;gap:3px"><div style="height:9px;width:'+axes[i][1]+'%;max-width:45%;background:'+tc1.ac+';border-radius:4px;opacity:.7"></div><div style="height:9px;width:'+axes[i][2]+'%;max-width:45%;background:'+tc2.ac+';border-radius:4px;opacity:.7"></div></div></div>'}
+
+  return '<div class="page">'
+  // Header
+  +'<div style="background:var(--grad);color:#fff;padding:1.5rem 1.5rem 2.5rem;text-align:center">'
+  +'<button onclick="go({page:\'cross\',tmp:{}})" style="background:rgba(255,255,255,.2);border:none;color:#fff;border-radius:20px;padding:5px 13px;cursor:pointer;font-size:.78rem;margin-bottom:.6rem">\u2190 Retour</button>'
+  +'<div style="font-size:.75rem;opacity:.7;margin-bottom:.5rem">Rapport crois\u00e9</div>'
+  +'<div style="display:flex;justify-content:center;align-items:center;gap:16px">'
+  +'<div>'+avImg(a1,55)+'<div style="font-weight:700;font-size:.88rem;margin-top:4px">'+esc(a1)+'</div><div style="font-size:.68rem;opacity:.7">'+S.user.myType+' \u2014 Moi</div></div>'
+  +'<div style="font-size:1.3rem;opacity:.5">\u00d7</div>'
+  +'<div>'+avImg(a2,55)+'<div style="font-weight:700;font-size:.88rem;margin-top:4px">'+esc(a2)+'</div><div style="font-size:.68rem;opacity:.7">'+c.type+' \u2014 '+esc(c.name)+'</div></div>'
+  +'</div></div>'
+  +'<div class="mx" style="margin-top:-1.2rem;padding-bottom:2rem">'
+  
+  // Score
+  +'<div class="card" style="text-align:center"><div style="font-size:2rem;font-weight:700;color:var(--c1)">'+cr.sc+'%</div><p style="font-size:.78rem;color:var(--mu);margin:3px 0 0">Compatibilit\u00e9 \u00b7 '+cr.sh+'/4 dimensions communes \u00b7 '+cr.co+' compl\u00e9mentarit\u00e9'+(cr.co>1?'s':'')+'</p></div>'
+  
+  // 1. Aperçu général
+  +'<div class="card"><h4 style="font-size:1rem;font-weight:700;margin:0 0 .8rem;color:var(--c1)">1. Aper\u00e7u g\u00e9n\u00e9ral</h4>'
+  +'<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">'
+  +'<div><div style="display:flex;align-items:center;gap:6px;margin-bottom:6px">'+avImg(a1,28)+'<span style="font-weight:700;font-size:.85rem;color:'+tc1.tx+'">'+esc(a1)+'</span></div>'+ov1+'<div style="margin-top:6px"><div style="font-size:.72rem;font-weight:600;color:#2E7D32;margin-bottom:3px">Forces</div>'+f1+'</div><div style="margin-top:4px"><div style="font-size:.72rem;font-weight:600;color:#E65100;margin-bottom:3px">Vigilance</div>'+v1+'</div><div style="margin-top:4px;font-size:.72rem"><strong>Valeurs :</strong> '+esc(cr.val1)+'</div><div style="font-size:.72rem"><strong>Besoins :</strong> '+esc(cr.need1)+'</div></div>'
+  +'<div><div style="display:flex;align-items:center;gap:6px;margin-bottom:6px">'+avImg(a2,28)+'<span style="font-weight:700;font-size:.85rem;color:'+tc2.tx+'">'+esc(a2)+'</span></div>'+ov2+'<div style="margin-top:6px"><div style="font-size:.72rem;font-weight:600;color:#2E7D32;margin-bottom:3px">Forces</div>'+f2+'</div><div style="margin-top:4px"><div style="font-size:.72rem;font-weight:600;color:#E65100;margin-bottom:3px">Vigilance</div>'+v2+'</div><div style="margin-top:4px;font-size:.72rem"><strong>Valeurs :</strong> '+esc(cr.val2)+'</div><div style="font-size:.72rem"><strong>Besoins :</strong> '+esc(cr.need2)+'</div></div>'
+  +'</div></div>'
+  
+  // Dimension comparison
+  +'<div class="card"><h4 style="font-size:.9rem;font-weight:600;margin:0 0 .5rem">Comparaison des dimensions</h4>'
+  +'<div style="display:flex;gap:10px;font-size:.74rem;color:#666;margin-bottom:6px"><span style="display:flex;align-items:center;gap:3px"><span style="width:8px;height:8px;border-radius:2px;background:'+tc1.ac+';display:inline-block"></span>'+esc(a1)+'</span><span style="display:flex;align-items:center;gap:3px"><span style="width:8px;height:8px;border-radius:2px;background:'+tc2.ac+';display:inline-block"></span>'+esc(a2)+'</span></div>'+bars+'</div>'
+  
+  // 2. Alignments
+  +(cr.align.length?'<div class="card"><h4 style="font-size:1rem;font-weight:700;margin:0 0 .8rem;color:#1565C0">2. Points d\'alignement</h4>'+alH+'</div>':'')
+  
+  // 3. Complementarities
+  +(cr.compl.length?'<div class="card"><h4 style="font-size:1rem;font-weight:700;margin:0 0 .8rem;color:#00897B">3. Compl\u00e9mentarit\u00e9s</h4>'+coH+'</div>':'')
+  
+  // 4. Frictions
+  +(cr.frict.length?'<div class="card"><h4 style="font-size:1rem;font-weight:700;margin:0 0 .8rem;color:#E65100">4. Zones de friction potentielles</h4>'+frH+'</div>':'')
+  
+  // 5. Guide
+  +'<div class="card" style="background:linear-gradient(135deg,#E3F2FD,#E8F5E9);box-shadow:none"><h4 style="font-size:1rem;font-weight:700;margin:0 0 .8rem">5. Guide de discussion</h4>'+guH+'</div>'
+  
+  // 6. Suggestions
+  +'<div class="card"><h4 style="font-size:1rem;font-weight:700;margin:0 0 .8rem;color:'+tc1.ac+'">Suggestions pour '+esc(a1)+' ('+S.user.myType+')</h4>'+sg1+'</div>'
+  +'<div class="card"><h4 style="font-size:1rem;font-weight:700;margin:0 0 .8rem;color:'+tc2.ac+'">Suggestions pour '+esc(a2)+' ('+c.type+')</h4>'+sg2+'</div>'
+  
+  +'</div></div>';
 }
 
 /* === SETTINGS === */
